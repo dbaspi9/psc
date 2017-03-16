@@ -3,16 +3,15 @@ lock "3.7.2"
 
 set :application, "psc"
 set :repo_url, "git@github.com:dbaspi9/psc.git"
-set :deploy_to, "/usr/home/login/domains/pasjasmakucatering.pl/"
-set :scm, :git
+set :deploy_to, "/home/pasjasmaku/domains/pasjasmakucatering.pl/public_ruby"
 set :branch, "master"
-set :user, "pasjasmaku"
-set :scm_passphrase, "HQiUqVrFwExf5HES(37%"
 set :use_sudo, false
 set :rails_env, "production"
 set :deploy_via, :copy
 set :keep_releases, 3
-server "s12.mydevil.net", :app, :web, :db, :primary => true
+
+
+# server "s12.mydevil.net", :app, :web, :db, primary: true
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
