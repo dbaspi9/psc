@@ -11,7 +11,7 @@
       </button>
 
       <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-      <a class="navbar-brand" href="index.html">Pasja Smaku Catering</a>
+      <%= link_to "Pasja Smaku", root_path, class: "navbar-brand" %>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -24,7 +24,7 @@
           <%= link_to "Oferta", offers_path %>
         </li>
         <li>
-          <a href="blog.html">Diety</a>
+          <%= link_to "Diety", diets_path %>
         </li>
         <li>
           <a href="blog.html">Cennik</a>
